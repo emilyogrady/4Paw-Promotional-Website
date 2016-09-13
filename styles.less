@@ -1,11 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Roboto:100);
+@dark-blue:#2A5597;
+@light-blue:#79B7EE;
+@red-orange:#E15546;
 a {
     opacity:1;
     transition: all 0.3s ease 0s;
-}
-a:hover {
-    opacity:0.75;   
-    background-color:#79B7EE;
+    &:hover {
+        opacity:0.75;
+        background-color:@light-blue;
+    }
 }
 .active {
     display:block;   
@@ -34,34 +37,36 @@ body {
 #donation {
     padding:40px 100px;   
 }
-.donation label {
-    margin-right:5px;  
-    color:#3B5397;
-}
-.donation li {
-    float:right;
-    margin-top:20px;
-}
-.donation ul:after {
-    content:"";
-    display:block;
-    clear:both;
-}
-.donation ul {
-    list-style: none;
-    margin:0px;
+.donation {
+    label {
+        margin-right: 5px;
+        color: #3B5397;
+    }
+    li {
+        float:right;
+        margin-top:20px;
+    }
+    ul {
+        list-style: none;
+        margin:0px;
+        &:after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+    }
 }
 footer {
-    background-color:#79B7EE; 
+    background-color:@light-blue;
     height:100px;
     margin-top:20px;
     position:relative;
     z-index:4;
-}
-footer:after {
-    content:"";
-    display:block;
-    clear:both;
+    &:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
 }
 .form-fields {
     width:400px;   
@@ -74,31 +79,31 @@ h2 {
 header {
     color:white;
     padding-left:20px;
-}
-header:after {
-    content:"";
-    display:block;
-    clear:both;
-}
-header h1 {
-    float:left;
-    font-size:3.4em;
-    font-family: 'roboto', sans-serif;
-    font-weight: 100;
-    position:relative;
-    top:15px;
-    left:5px;
-    width:500px;
-}
-header img {
-    width:144px;  
-    float:left;
+    &after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+    h1 {
+        float:left;
+        font-size:3.4em;
+        font-family: 'roboto', sans-serif;
+        font-weight: 100;
+        position:relative;
+        top:15px;
+        left:5px;
+        width:500px;
+    }
+    img {
+        width:144px;
+        float:left;
+    }
 }
 .hide {
     display:none;   
 }
 html {
-    background-color:#79B7EE;   
+    background-color:@light-blue;
 }
 #input-message {
     position:relative;
@@ -111,23 +116,23 @@ html {
     width:400px;   
 }
 #landing {
-    padding:30px 100px;   
-}
-#landing img {
-    width:684px; 
-    margin-right: 0px;
-}
-#landing .learn-more-btn img {
-    width:40px;   
-    position:relative;
-    top:10px;
+    padding:30px 100px;
+    img {
+        width:684px;
+        margin-right: 0px;
+    }
+    .learn-more-btn img {
+        width:40px;
+        position:relative;
+        top:10px;
+    }
 }
 #landing-text {
     width:283px; 
     margin-left:30px;
 }
 .learn-more-btn {
-    background-color:#2A5597;
+    background-color:@dark-blue;
     border-radius: 15px;
     color:white;
     font-size: 2em;
@@ -151,22 +156,22 @@ html {
 .modal-content {
     position:absolute;
     z-index: 100000000;
-}
-.modal-content .close-btn {
-    position:absolute;
-    left:760px;
-    top:12px;
-    width:20px;   
-}
-.modal-content .close-btn:hover {
-    opacity:1;   
-    background-color:#FFFFFF;
-}
-.modal-content .close-btn img {
-    width:20px;   
+    .close-btn {
+        position:absolute;
+        left:760px;
+        top:12px;
+        width:20px;
+    }
+    .close-btn:hover {
+        opacity:1;
+        background-color:#FFFFFF;
+    }
+    .close-btn img {
+        width:20px;
+    }
 }
 .next-btn {
-    background-color:#2A5597;
+    background-color:@dark-blue;
     border-radius: 15px;
     color:white;
     float:right;
@@ -175,15 +180,15 @@ html {
     font-family: 'roboto', sans-serif;
     padding:10px 40px 30px 50px;
     text-decoration: none;
-}
-.next-btn.active {
-    display:block;   
-}
-.next-btn img {
-    width:40px;
-    padding-left:10px;
-    position:relative;
-    top:13px;
+    &.active {
+        display:block;
+    }
+    img {
+        width:40px;
+        padding-left:10px;
+        position:relative;
+        top:13px;
+    }
 }
 p {
     font-size: .9em;
@@ -202,15 +207,15 @@ p {
     top:0px;
     left:0px;
     transition:all 0.5s ease;
-}
-.panel.active {
-    opacity:1;
-    z-index:3;
-}
-.panel:after {
-    content:"";
-    display:block;
-    clear:both;
+    &.active {
+        opacity:1;
+        z-index:3;
+    }
+    &:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
 }
 .panel-img {
     box-shadow: 6px 6px 5px #888888;
@@ -223,14 +228,14 @@ p {
     padding:0px;
     margin:0px;
     width:388px;
-}
-.panel-text:after {
-    content:"";
-    display:block;
-    clear:both;
+    &:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
 }
 .prev-btn {
-    background-color:#2A5597;
+    background-color:@dark-blue;
     border-radius: 15px;
     color:white;
     float:left;
@@ -239,21 +244,21 @@ p {
     padding:10px 40px 30px 30px;
     margin-left:50px;
     text-decoration: none;
-}
-.prev-btn.active {
-    display:block;   
-}
-.prev-btn img{
-    width:40px;
-    position:relative;
-    top:13px;
+    &.active {
+        display:block;
+    }
+    img{
+        width:40px;
+        position:relative;
+        top:13px;
+    }
 }
 .radio-btns {
     width:540px;
     color:#3B5397
 }
 .radio-btns input {
-    margin-right:10px;   
+    margin-right:10px;
 }
 .radio-btn-no {
     width:407px;
@@ -266,18 +271,18 @@ p {
     background-color:white;
     width:795px;
     margin:auto;
-}
-#share-options h2 {
-    text-align:center;
-    padding-top:30px;
-}
-#share-options #modal-img {
-    box-shadow: 8px 8px 5px #888888;
-    margin:0px 40px 40px 40px;
-    width:701px;
+    h2 {
+        text-align:center;
+        padding-top:30px;
+    }
+    #modal-img {
+        box-shadow: 8px 8px 5px #888888;
+        margin:0px 40px 40px 40px;
+        width:701px;
+    }
 }
 .submit-btn { 
-    background-color:#E15546;
+    background-color:@red-orange;
     border: none;
     border-radius: 15px;
     color:white;
@@ -288,9 +293,9 @@ p {
     opacity:1;
     text-decoration: none;
     transition: all 0.3s ease 0s;
-}
-.submit-btn:hover {
-    opacity:0.5;
+    &:hover {
+        opacity:0.5;
+    }
 }
 textarea {
     resize:none; 
@@ -315,11 +320,10 @@ textarea {
         width:300px;
     }
     #landing {
-        padding:70px 80px;   
-    }
-    #landing img {
-        width:540px;
-        
+        padding: 70px 80px;
+        img {
+            width: 540px;
+        }
     }
     #landing-text {
         width:348px;
@@ -330,7 +334,7 @@ textarea {
         top:10px;
     }
     .learn-more-btn {
-        background-color:#2A5597;
+        background-color:@dark-blue;
         border-radius: 15px;
         color:white;
         font-size: 1.3em;
@@ -365,12 +369,12 @@ textarea {
         width:440px;
         color:#3B5397;
         font-size: .8em;
-    }
-    .radio-btns input {
-        margin-right:10px;   
-    }
-    .radio-btns label {
-        font-size:1.25em;
+        input {
+            margin-right:10px;
+        }
+        label {
+            font-size:1.25em;
+        }
     }
     .radio-btn-no {
         width:309px;
@@ -409,18 +413,18 @@ textarea {
         width: 355px;
     }
     #landing {
-        height:850px;   
-    }
-    #landing img {
-        width:100%;
-    }
-    #landing .learn-more-btn img {
-        width:60px;   
-        position:relative;
-        top:10px;
+        height:850px;
+        img {
+            width:100%;
+        }
+        .learn-more-btn img {
+            width:60px;
+            position:relative;
+            top:10px;
+        }
     }
     .learn-more-btn {
-        background-color:#2A5597;
+        background-color:@dark-blue;
         border-radius: 15px;
         color:white;
         font-size: 3em;
@@ -444,14 +448,14 @@ textarea {
         position:absolute;
         left:610px;
         top:12px;
-        width:20px;   
-    }
-    .modal-content .close-btn:hover {
-        opacity:1;   
-        background-color:#FFFFFF;
-    }
-    .modal-content .close-btn img {
-        width:20px;   
+        width:20px;
+        &:hover {
+            opacity:1;
+            background-color:#FFFFFF;
+        }
+        img {
+            width:20px;
+        }
     }
     .next-btn {
         border-radius: 0px;
@@ -477,29 +481,29 @@ textarea {
         width:100%;
     }
     .prev-btn {
-        border-right: 1px solid #79B7EE;
+        border-right: 1px solid @light-blue;
         border-radius: 0px;
         box-sizing: border-box;
-        float:left;
-        margin:0px;
-        margin-bottom:0px;
-        text-align:center;
+        float: left;
+        margin: 0px;
+        margin-bottom: 0px;
+        text-align: center;
         width: 360px;
-    }
-    .prev-btn img {
-        margin-right:8px;
+        img {
+            margin-right: 8px;
+        }
     }
     .radio-btns {
         width:495px;
         color:#3B5397;
         font-size: .8em;
-    }
-    .radio-btns input {
-        margin-right:15px;   
-    }
-    .radio-btns label {
-        font-size:1.25em;
-        margin-right:15px;
+        input {
+            margin-right:15px;
+        }
+        label {
+            font-size:1.25em;
+            margin-right:15px;
+        }
     }
     .radio-btn-no {
         width:353px;
@@ -510,18 +514,18 @@ textarea {
     }
     #share-options {
         width:500px;
-    }
-    #share-options h2 {
-        text-align:center;
-        padding-top:30px;
-    }
-    #share-options #modal-img {
-        box-shadow: none;
-        margin:0px 40px 40px 0px;
-        width:100%;
+        h2 {
+            text-align:center;
+            padding-top:30px;
+        }
+        #modal-img {
+            box-shadow: none;
+            margin:0px 40px 40px 0px;
+            width:100%;
+        }
     }
     .submit-btn { 
-        background-color:#E15546;
+        background-color:@red-orange;
         border: none;
         border-radius: 0px;
         color:white;

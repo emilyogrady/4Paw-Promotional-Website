@@ -42,14 +42,14 @@ body {
   float: right;
   margin-top: 20px;
 }
+.donation ul {
+  list-style: none;
+  margin: 0px;
+}
 .donation ul:after {
   content: "";
   display: block;
   clear: both;
-}
-.donation ul {
-  list-style: none;
-  margin: 0px;
 }
 footer {
   background-color: #79B7EE;
@@ -75,7 +75,7 @@ header {
   color: white;
   padding-left: 20px;
 }
-header:after {
+headerafter {
   content: "";
   display: block;
   clear: both;
