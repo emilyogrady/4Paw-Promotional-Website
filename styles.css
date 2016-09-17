@@ -1,11 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Oswald|Open+Sans);
 a {
-  opacity: 1;
-  transition: all 0.3s ease 0s;
-}
-a:hover {
-  opacity: 0.75;
-  background-color: #79B7EE;
+  color: white;
+  font-size: 4.3em;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
 }
 .active {
   display: block;
@@ -13,520 +11,207 @@ a:hover {
 body {
   font-family: 'open sans', sans-serif;
   margin: auto;
-  width: 1200px;
-}
-.container {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 516px;
-}
-.donate-form:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.donate-text {
-  width: 380px;
-  float: left;
-  margin-right: 30px;
+  padding: 0px;
 }
 #donation {
-  padding: 40px 100px;
+  background-color: white;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
 }
-.donation label {
-  margin-right: 5px;
-  color: #3B5397;
-}
-.donation li {
-  float: right;
-  margin-top: 20px;
-}
-.donation ul {
-  list-style: none;
-  margin: 0px;
-}
-.donation ul:after {
-  content: "";
-  display: block;
-  clear: both;
+#donation .donate-text {
+  margin: auto;
+  width: 75%;
+  padding: 45px 0 0 0;
 }
 footer {
-  background-color: #79B7EE;
-  height: 100px;
-  margin-top: 20px;
+  background-color: #42a7cc;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+footer a:hover {
+  background-color: red;
+}
+footer .learn-more-btn {
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+footer .learn-more-btn img {
+  width: 50px;
   position: relative;
-  z-index: 4;
+  top: 8px;
 }
-footer:after {
-  content: "";
-  display: block;
-  clear: both;
+footer .next-btn {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  text-align: right;
 }
-.form-fields {
-  width: 400px;
+footer .next-btn img {
+  width: 50px;
+  position: relative;
+  top: 8px;
+}
+footer .prev-btn {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px;
+}
+footer .prev-btn img {
+  width: 50px;
+  position: relative;
+  top: 8px;
+}
+h1 {
+  background-image: url("images/logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  width: 190px;
+  height: 95px;
+  text-indent: -9999px;
 }
 h2 {
-  font-family: 'oswald', sans-serif;
-  font-size: 1.8em;
-  margin: 0px;
+  text-transform: uppercase;
+  font-size: 6.2em;
+  font-family: 'Oswald', sans-serif;
 }
 header {
-  color: white;
-  padding-left: 20px;
-}
-headerafter {
-  content: "";
-  display: block;
-  clear: both;
-}
-header h1 {
-  float: left;
-  font-size: 3.4em;
-  font-family: 'roboto', sans-serif;
-  font-weight: 100;
-  position: relative;
-  top: 15px;
-  left: 5px;
-  width: 500px;
+  background-color: #42a7cc;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 header img {
-  width: 144px;
-  float: left;
+  width: 200px;
 }
 .hide {
   display: none;
 }
 html {
-  background-color: #79B7EE;
-}
-#input-message {
-  position: relative;
-  left: 0px;
-  top: 80px;
-  font-size: .8em;
-  padding: 10px;
-}
-.instructions {
-  width: 400px;
+  background-color: #42a7cc;
+  font-size: 62.5%;
 }
 #landing {
-  padding: 30px 100px;
-}
-#landing img {
-  width: 684px;
-  margin-right: 0px;
-}
-#landing .learn-more-btn img {
-  width: 40px;
-  position: relative;
-  top: 10px;
-}
-#landing-text {
-  width: 283px;
-  margin-left: 30px;
-}
-.learn-more-btn {
-  background-color: #2A5597;
-  border-radius: 15px;
-  color: white;
-  font-size: 2em;
-  font-family: 'roboto', sans-serif;
-  margin-left: 30px;
-  position: relative;
-  top: 70px;
-  padding: 30px;
-  text-decoration: none;
-}
-.modal {
-  position: absolute;
-  z-index: 100000000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.modal-content {
-  position: absolute;
-  z-index: 100000000;
-}
-.modal-content .close-btn {
-  position: absolute;
-  left: 760px;
-  top: 12px;
-  width: 20px;
-}
-.modal-content .close-btn:hover {
-  opacity: 1;
-  background-color: #FFFFFF;
-}
-.modal-content .close-btn img {
-  width: 20px;
-}
-.next-btn {
-  background-color: #2A5597;
-  border-radius: 15px;
-  color: white;
-  float: right;
-  margin-right: 50px;
-  font-size: 1.2em;
-  font-family: 'roboto', sans-serif;
-  padding: 10px 40px 30px 50px;
-  text-decoration: none;
-}
-.next-btn.active {
-  display: block;
-}
-.next-btn img {
-  width: 40px;
-  padding-left: 10px;
-  position: relative;
-  top: 13px;
+  background-image: url("images/p1.jpg");
 }
 p {
-  font-size: .9em;
-  line-height: 1.8em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.9em;
+  line-height: 1.9em;
+}
+#page-1 {
+  background-image: url("images/p2.jpg");
+}
+#page-2 {
+  background-image: url("images/p3.jpg");
+}
+#page-3 {
+  background-image: url("images/p4.jpg");
 }
 .panel {
-  background-color: white;
-  box-sizing: border-box;
-  padding: 70px 100px;
-  height: 516px;
-  margin-bottom: 30px;
-  position: absolute;
-  z-index: 2;
-  opacity: 0;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  transition: all 0.5s ease;
+  position: relative;
+  display: none;
+  margin: 50px 0 0 0;
+  padding: 0 0 100px 0;
 }
 .panel.active {
-  opacity: 1;
-  z-index: 3;
-}
-.panel:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.panel-img {
-  box-shadow: 6px 6px 5px #888888;
-  float: left;
-  margin-right: 30px;
-  width: 555px;
-}
-.panel-text {
-  float: left;
-  padding: 0px;
-  margin: 0px;
-  width: 388px;
-}
-.panel-text:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.prev-btn {
-  background-color: #2A5597;
-  border-radius: 15px;
-  color: white;
-  float: left;
-  font-size: 1.2em;
-  font-family: 'roboto', sans-serif;
-  padding: 10px 40px 30px 30px;
-  margin-left: 50px;
-  text-decoration: none;
-}
-.prev-btn.active {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
   display: block;
 }
-.prev-btn img {
-  width: 40px;
-  position: relative;
-  top: 13px;
-}
-.radio-btns {
-  width: 540px;
-  color: #3B5397;
-}
-.radio-btns input {
-  margin-right: 10px;
-}
-.radio-btn-no {
-  width: 407px;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  top: -15px;
-}
-#share-options {
-  background-color: white;
-  width: 795px;
+.panel .panel-text {
   margin: auto;
-}
-#share-options h2 {
-  text-align: center;
-  padding-top: 30px;
-}
-#share-options #modal-img {
-  box-shadow: 8px 8px 5px #888888;
-  margin: 0px 40px 40px 40px;
-  width: 701px;
-}
-.submit-btn {
-  background-color: #E15546;
-  border: none;
-  border-radius: 15px;
+  width: 75%;
   color: white;
+  padding: 45px 0 0 0;
+}
+.panel .panel-text h2 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+nav li .btn-nav {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #000;
+  position: relative;
+  left: 50%;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+nav li .btn-nav:hover {
+  background-color: red;
+  nav-label: display:block;
+}
+nav li .nav-label {
+  background-color: white;
+  padding: 5px 20px 5px 20px;
+  font-family: 'Oswald', sans-serif;
   font-size: 2em;
-  font-family: 'roboto', sans-serif;
-  padding: 30px 120px;
-  margin-left: 50px;
-  opacity: 1;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  border-radius: 10px;
+  position: relative;
+  display: block;
 }
-.submit-btn:hover {
-  opacity: 0.5;
+nav li .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  left: 50%;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  position: relative;
 }
-textarea {
-  resize: none;
-  height: 70px;
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
-@media screen and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) {
   body {
-    width: 1080px;
-  }
-  .form-fields {
-    width: 300px;
-  }
-  #input-message {
-    position: absolute;
-    left: 470px;
-    top: 400px;
-    font-size: .8em;
-    padding: 10px;
-  }
-  .instructions {
-    width: 300px;
-  }
-  #landing {
-    padding: 70px 80px;
-  }
-  #landing img {
-    width: 540px;
-  }
-  #landing-text {
-    width: 348px;
-  }
-  #landing .learn-more-btn img {
-    width: 40px;
-    position: relative;
-    top: 10px;
-  }
-  .learn-more-btn {
-    background-color: #2A5597;
-    border-radius: 15px;
-    color: white;
-    font-size: 1.3em;
-    font-family: 'roboto', sans-serif;
-    margin-left: 30px;
-    position: relative;
-    top: 23px;
-    padding: 20px;
-    text-decoration: none;
-  }
-  .next-btn {
-    left: 515px;
-  }
-  .panel {
-    padding-top: 90px;
-    padding-bottom: 60px;
-    height: 500px;
-  }
-  .panel-img {
-    box-shadow: 6px 6px 5px #888888;
-    margin-right: 30px;
-    width: 448px;
-  }
-  .panel-text {
-    width: 388px;
-  }
-  .prev-btn {
-    margin-left: 100px;
-  }
-  .radio-btns {
-    width: 440px;
-    color: #3B5397;
-    font-size: .8em;
-  }
-  .radio-btns input {
-    margin-right: 10px;
-  }
-  .radio-btns label {
-    font-size: 1.25em;
-  }
-  .radio-btn-no {
-    width: 309px;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    top: -10px;
-  }
-}
-@media screen and (max-width: 1079px) {
-  body {
-    width: 720px;
-  }
-  .donate-text {
-    float: none;
-    width: 100%;
-  }
-  .donation ul {
-    padding-left: 0px;
+    width: 1200px;
+    margin: auto;
   }
   footer {
-    height: 0px;
-    margin-top: 300px;
-  }
-  .form-fields {
-    width: 355px;
-  }
-  #input-message {
-    position: relative;
-    left: 200px;
-    top: 60px;
-    font-size: .8em;
-    padding: 10px;
-  }
-  .instructions {
-    width: 355px;
-  }
-  #landing {
-    height: 850px;
-  }
-  #landing img {
     width: 100%;
   }
-  #landing .learn-more-btn img {
-    width: 60px;
-    position: relative;
-    top: 10px;
+  footer ul {
+    width: 1200px;
+    margin: auto;
   }
-  .learn-more-btn {
-    background-color: #2A5597;
-    border-radius: 15px;
-    color: white;
-    font-size: 3em;
-    font-family: 'roboto', sans-serif;
-    position: relaive;
-    top: -28px;
-    left: 160px;
+  footer .next-btn {
+    width: 300px;
     padding: 20px;
-    text-decoration: none;
+    float: right;
+    text-align: right;
   }
-  #landing.panel {
-    padding: 0px;
-  }
-  #landing-text {
-    float: none;
-    margin: 63px;
-    margin-top: 30px;
-    width: 600px;
-  }
-  .modal-content .close-btn {
-    position: absolute;
-    left: 610px;
-    top: 12px;
-    width: 20px;
-  }
-  .modal-content .close-btn:hover {
-    opacity: 1;
-    background-color: #FFFFFF;
-  }
-  .modal-content .close-btn img {
-    width: 20px;
-  }
-  .next-btn {
-    border-radius: 0px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    margin: 0px;
-    width: 360px;
-  }
-  .panel {
-    margin-bottom: 0px;
-    height: 900px;
-  }
-  .panel-img {
-    box-shadow: none;
-    width: 100%;
-    float: none;
-  }
-  .panel-text {
-    float: none;
-    margin-left: 0px;
-    margin-top: 30px;
-    width: 100%;
-  }
-  .prev-btn {
-    border-right: 1px solid #79B7EE;
-    border-radius: 0px;
-    box-sizing: border-box;
-    float: left;
-    margin: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    width: 360px;
-  }
-  .prev-btn img {
-    margin-right: 8px;
-  }
-  .radio-btns {
-    width: 495px;
-    color: #3B5397;
-    font-size: .8em;
-  }
-  .radio-btns input {
-    margin-right: 15px;
-  }
-  .radio-btns label {
-    font-size: 1.25em;
-    margin-right: 15px;
-  }
-  .radio-btn-no {
-    width: 353px;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    top: -10px;
-  }
-  #share-options {
-    width: 500px;
-  }
-  #share-options h2 {
-    text-align: center;
-    padding-top: 30px;
-  }
-  #share-options #modal-img {
-    box-shadow: none;
-    margin: 0px 40px 40px 0px;
-    width: 100%;
-  }
-  .submit-btn {
-    background-color: #E15546;
-    border: none;
-    border-radius: 0px;
-    color: white;
-    font-size: 1.2em;
-    font-family: 'roboto', sans-serif;
-    padding: 20px 40px;
-    margin-left: 50px;
-    opacity: 1;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
+  footer .prev-btn {
+    width: 300px;
+    padding: 20px;
   }
 }

@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144959,
+		"inputAbbreviatedPath": "\/images\/logo.png",
+		"outputAbbreviatedPath": "\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/modal-window.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -24,46 +35,46 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/pg-1.jpg": {
+	"\/images\/p1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 179489,
-		"inputAbbreviatedPath": "\/images\/pg-1.jpg",
-		"outputAbbreviatedPath": "\/images\/pg-1.jpg",
+		"initialSize": 5.96708e+06,
+		"inputAbbreviatedPath": "\/images\/p1.jpg",
+		"outputAbbreviatedPath": "\/images\/p1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/pg-2.jpg": {
+	"\/images\/p2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 80412,
-		"inputAbbreviatedPath": "\/images\/pg-2.jpg",
-		"outputAbbreviatedPath": "\/images\/pg-2.jpg",
+		"initialSize": 2.29748e+06,
+		"inputAbbreviatedPath": "\/images\/p2.jpg",
+		"outputAbbreviatedPath": "\/images\/p2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/pg-3.jpg": {
+	"\/images\/p3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 115368,
-		"inputAbbreviatedPath": "\/images\/pg-3.jpg",
-		"outputAbbreviatedPath": "\/images\/pg-3.jpg",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/p3.jpg",
+		"outputAbbreviatedPath": "\/images\/p3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/pg-4.jpg": {
+	"\/images\/p4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 210902,
-		"inputAbbreviatedPath": "\/images\/pg-4.jpg",
-		"outputAbbreviatedPath": "\/images\/pg-4.jpg",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/p4.jpg",
+		"outputAbbreviatedPath": "\/images\/p4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -76,6 +87,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/min\/script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/min\/min\/script-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/README.md": {
 		"criticStyle": 0,
