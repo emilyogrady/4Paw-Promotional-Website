@@ -3,6 +3,9 @@ $(document).ready(function(){
     $('.learn-more-btn').on('click', next);
     $('.prev-btn').on('click', prev);
     $('.next-btn').on('click', next);
+    $('.btn-nav').on ('click', btn_nav);
+
+    // Trying to find a way to cycle through an array of images for the background. THe problem is that the final page doesn't have a background image and is just a white color, but it still looks for a background image but
 
     var $content = $('#share-options').detach();
     $('.submit-btn').on('click', function(e){
@@ -32,13 +35,17 @@ $(document).ready(function(){
     });
 });
 
-var landing = $('#landing')
+var landing = $('#landing');
+var learn_more_btn = $('.learn-more-btn');
 var current_panel = $('.panel.active');
 var next_btn = $('.next-btn');
 var prev_btn = $('.prev-btn');
 var submit_btn = $('.submit-btn');
 var fields = $('.form-fields');
 
+function btn_nav(e){
+
+}
 
 function prev(e){
     var current = $('.panel.active');
@@ -46,12 +53,11 @@ function prev(e){
     next_btn.removeClass('hide').addClass('active');
     prev_btn.removeClass('hide').addClass('active');
     submit_btn.removeClass('active').addClass('hide');
-    
     if ($('#landing').hasClass('active')) {
         next_btn.addClass('hide').removeClass('active');
         prev_btn.addClass('hide').removeClass('active');
-    } 
-    
+        learn_more_btn.addClass('active').removeClass('hide');
+    };
 }
 
 function next(e){
@@ -60,11 +66,14 @@ function next(e){
     next_btn.removeClass('hide').addClass('active');
     prev_btn.removeClass('hide').addClass('active');
     submit_btn.removeClass('active').addClass('hide');
-    
+
+    if ($('.prev-btn').hasClass('active')) {
+        learn_more_btn.addClass('hide').removeClass('active');
+    }
     if ($('#donation').hasClass('active')) {
         next_btn.addClass('hide').removeClass('active');
         submit_btn.removeClass('hide').addClass('active');
-    } 
+    }
 }
 
 function submit(e){
