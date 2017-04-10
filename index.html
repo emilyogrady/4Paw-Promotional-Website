@@ -57,8 +57,18 @@
                                  <li><label>Email:</label> <input type="email" name="email" class="form-fields"/></li>
                                  <li><label>Donation Amount:</label> <input type="humber" name="donation" class="form-fields" /></li>
                                  <li><label>Special Instructions:</label> <textarea class="instructions form-fields" rows="3" placeholder="Leave note to designate what donation is for."></textarea></li>
-                                 <li class="radio-btns"><label>Want more info?</label> <input type="radio" name="email-subscribe" value="yes" checked/><i>yes, I would like to recieve more info</i> </li><li class="radio-btns radio-btn-no"><input type="radio" name="email-subscribe" /><i>no, I would not like to recieve more info</i></li>
-                                 <li><input type="submit" value="Submit" class="submit-btn hide"/></li>
+                                 <li class="radio-btns"><label>Want more info?</label>
+                                     <ul>
+                                         <li class="radio-btns radio-btn-yes">
+                                             <input type="radio" name="email-subscribe" value="yes" checked/>
+                                             <label>yes, I would like to recieve more info</label>
+                                         </li>
+                                         <li class="radio-btns radio-btn-no">
+                                             <input type="radio" name="email-subscribe" />
+                                             <label>no, I would not like to recieve more info</label>
+                                         </li>
+                                    </ul>
+                                     <li><input type="submit" value="Submit" class="submit-btn hide"/></li>
                                  <li><span id="input-message"></span></li>
                              </ul>
                         </form>   

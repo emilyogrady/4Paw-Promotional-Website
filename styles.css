@@ -39,24 +39,34 @@ body {
 }
 #donation .donate-form .form-fields {
   width: 200px;
-  padding: 10px 0 0 2px;
+  padding: 2px 0 2px 2px;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
 }
 #donation .donate-form input {
   display: block;
-}
-#donation .donate-form .radio-btns {
-  float: none;
+  float: left;
+  width: 70%;
 }
 #donation .donate-form label {
   display: block;
   margin-right: 10px;
   font-family: 'Oswald', sans-serif;
   font-size: 1.7em;
+  float: left;
+  width: 30%;
 }
 #donation .donate-form li {
   float: left;
   width: 50%;
   margin-bottom: 20px;
+}
+#donation .donate-form .radio-btns {
+  float: none;
+}
+#donation .donate-form .radio-btns ul label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
 }
 #donation .donate-form .submit-btn {
   background-color: #FA3719;
@@ -166,7 +176,7 @@ html {
 }
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.9em;
+  font-size: 1.4em;
   line-height: 1.9em;
 }
 #page-1 {

@@ -2,6 +2,8 @@
 @blue-background: #42a7cc;
 @red-btn: #FA3719;
 @font-oswald: 'Oswald', sans-serif;
+@font-body: 'Open Sans', sans-serif;
+@font-body-size: 1.4em;
 @font-subhead-size: 6.2em;
 @font-subhead-mobile-size: 5em;
 @font-btn-size:4.3em;
@@ -44,24 +46,34 @@ body {
     font-size: 1.2em;
     .form-fields {
       width:200px;
-      padding:10px 0 0 2px;
+      padding:2px 0 2px 2px;
+      font-size: 1.2em;
+      font-family: @font-body;
     }
     input {
       display: block;
-    }
-    .radio-btns {
-      float:none;
+      float: left;
+      width:70%;
     }
     label {
       display:block;
       margin-right:10px;
       font-family: @font-oswald;
       font-size: 1.7em;
+      float: left;
+      width:30%
     }
     li {
       float:left;
       width:50%;
       margin-bottom:20px;
+    }
+    .radio-btns {
+      float:none;
+      ul label {
+        font-family: @font-body;
+        font-size: @font-body-size;
+      }
     }
     .submit-btn {
       background-color: @red-btn;
@@ -173,8 +185,8 @@ html {
   background-image: url("images/p1.jpg");
 }
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.9em;
+  font-family: @font-body;
+  font-size: @font-body-size;
   line-height: 1.9em;
 }
 #page-1 {
